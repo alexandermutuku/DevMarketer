@@ -30067,7 +30067,7 @@ module.exports = Vue$3;
 /***/ (function(module, exports) {
 
 var accordions = document.getElementsByClassName('has-submenu');
-// const adminSlideButton = document.getElementById('admin-slideout-button')
+var adminSlideButton = document.getElementById('admin-slideout-button');
 
 function setSubmenuStyles(submenu, maxHeight, margins) {
   submenu.style.maxHeight = maxHeight;
@@ -30075,10 +30075,10 @@ function setSubmenuStyles(submenu, maxHeight, margins) {
   submenu.style.marginBottom = margins;
 }
 
-// // adminSlideButton.onclick = function () {
-// //   this.classList.toggle('is-active');
-// //   document.getElementById('admin-side-menu').classList.toggle('is-active');
-// }
+adminSlideButton.onclick = function () {
+  this.classList.toggle('is-active');
+  document.getElementById('admin-side-menu').classList.toggle('is-active');
+};
 
 for (var i = 0; i < accordions.length; i++) {
   if (accordions[i].classList.contains('is-active')) {

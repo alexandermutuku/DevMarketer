@@ -1,9 +1,38 @@
-.side-menu {
+// .side-menu {
+//   position: fixed;
+//   height: 100vh;
+//   width: 250px;
+//   background-color: white;
+//   overflow: scroll;
+// }
+
+#admin-side-menu {
   position: fixed;
   height: 100vh;
+  top: 3.5rem;
+  left:-250px;
   width: 250px;
   background-color: white;
   overflow: scroll;
+  transition: left 0.3s ease-in-out;
+  &.is-active{
+    transition: left 0.3s ease-in-out;
+    left:0;
+  }
+
+  @include desktop{
+    left: 0;
+  }
+}
+
+#admin-slideout-button{
+  transition: 0.3s;
+  &.is-active{
+    transition: 0.3s;
+    transform: rotateY(180deg);
+  }
+
+
 }
 
 .management-area  {
