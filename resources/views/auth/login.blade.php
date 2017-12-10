@@ -27,7 +27,6 @@
               @if ($errors->has('password'))
                 <p class="help is-danger">{{$errors->first('password')}}</p>
               @endif
-
             </div>
 
             <b-checkbox name="remember" class="m-t-20">Remember Me</b-checkbox>

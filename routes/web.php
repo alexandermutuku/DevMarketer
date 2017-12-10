@@ -20,6 +20,9 @@ Auth::routes();
 route::prefix('manage')->middleware('role:superadministrator|administrator|editor|author|contributor')->group(function(){
   route::get('/' , 'ManageController@index');
   route::get('/dashboard','ManageController@dashboard')->name('manage.dashboard');
+  route::resource('/users','UserController');
+  route::resource('/permissions','PermissionController',['except' => 'destroy']);
+  route::resource('/roles','RoleController',['except' => 'destroy']);
 });
 
 Route::get('/home', 'HomeController@index')->name('home');
