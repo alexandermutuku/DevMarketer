@@ -6,11 +6,11 @@
       <div class="column">
         <h1 class="title">{{$role->display_name}}<small class="m-l-25"><em>({{$role->name}})</em></small></h1>
         <h5>{{$role->description}}</h5>
-      </div>
+      </div> <!-- end of column -->
       <div class="column">
         <a href="{{route('roles.edit', $role->id)}}" class="button is-primary is-pulled-right"><i class="fa fa-user-plus m-r-10"></i> Edit this Role</a>
-      </div>
-    </div>
+      </div><!-- end of column -->
+    </div> <!-- end of .columns -->
     <hr class="m-t-0">
 
     <div class="columns">
@@ -29,7 +29,8 @@
             </div>
           </article>
         </div>
-      </div>
-    </div>
-  </div>
+      </div><!-- end of column -->
+    </div><!-- end of .columns -->
+
+  </div> <!-- end of .flex-container -->
 @endsection

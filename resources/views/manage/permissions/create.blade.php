@@ -80,13 +80,13 @@
                   </tr>
                 </tbody>
               </table>
-            </div>
+            </div><!-- end of .column -->
           </div>
 
           <button class="button is-success">Create Permission</button>
         </form>
       </div>
-    </div>
+    </div><!-- end of .columns -->
 
   </div> <!-- end of .flex-container -->
 @endsection

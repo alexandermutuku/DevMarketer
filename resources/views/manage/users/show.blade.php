@@ -9,8 +9,9 @@
 
       <div class="column">
         <a href="{{route('users.edit', $user->id)}}" class="button is-primary is-pulled-right"><i class="fa fa-user m-r-10"></i> Edit User</a>
-      </div>
-    </div>
+      </div><!-- end of column -->
+    </div><!-- end of .columns -->
+
     <hr class="m-t-0">
 
     <div class="columns">
@@ -31,15 +32,16 @@
           <div class="field">
             <label for="email" class="label">Roles</label>
             <ul>
-              @forelse ($user->roles as $role)
+              {{$user->roles->count() == 0 ? 'This user has not been assigned any roles yet' : ''}}
+              @foreach ($user->roles as $role)
                 <li>{{$role->display_name}} ({{$role->description}})</li>
-              @empty
-                <p>This user has not been assigned any roles yet</p>
-              @endforelse
+              @endforeach
             </ul>
           </div>
         </div>
+
       </div>
-    </div>
-  </div>
+    </div><!-- end of .columns-->
+
+  </div><!-- end of flex-container -->
 @endsection

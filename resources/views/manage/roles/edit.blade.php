@@ -5,9 +5,11 @@
     <div class="columns m-t-10">
       <div class="column">
         <h1 class="title">Edit {{$role->display_name}}</h1>
-      </div>
+      </div><!-- end of column -->
     </div>
+
     <hr class="m-t-0">
+
     <form action="{{route('roles.update', $role->id)}}" method="POST">
       {{ csrf_field() }}
       {{ method_field('PUT') }}
@@ -41,8 +43,8 @@
               </div>
             </article>
           </div>
-        </div>
-      </div>
+        </div><!-- end of column -->
+      </div><!-- end of .columns -->
 
       <div class="columns">
         <div class="column">
@@ -65,9 +67,10 @@
 
           <button class="button is-primary">Save Changes to Role</button>
         </div>
-      </div>
+      </div><!-- end of .columns -->
     </form>
-  </div>
+
+  </div><!-- end of flex-container -->
 @endsection
 
 @section('scripts')

@@ -5,7 +5,7 @@
     <div class="columns m-t-10">
       <div class="column">
         <h1 class="title">Create New Role</h1>
-      </div>
+      </div><!-- end of .columns -->
     </div>
     <hr class="m-t-0">
     <form action="{{route('roles.store')}}" method="POST">
@@ -40,8 +40,8 @@
               </div>
             </article>
           </div>
-        </div>
-      </div>
+        </div><!-- end of column -->
+      </div><!-- end of .columns -->
 
       <div class="columns">
         <div class="column">
@@ -64,9 +64,9 @@
 
           <button class="button is-primary">Create new Role</button>
         </div>
-      </div>
+      </div><!-- end of .columns -->
     </form>
-  </div>
+  </div><!-- end of flex-container-->
 @endsection
 
 

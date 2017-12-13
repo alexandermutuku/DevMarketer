@@ -40,5 +40,5 @@
    </div><!-- end of card content -->
   </div> <!-- end of card-->
   {{$users->links()}}
-</div>
+</div><!-- end of flex-container -->
 @endsection

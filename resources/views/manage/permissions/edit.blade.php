@@ -10,7 +10,7 @@
       <div class="column">
         <a href="{{route('permissions.edit', $permission->id)}}" class="button is-primary is-pulled-right"><i class="fa fa-edit m-r-10"></i> Edit Permission</a>
       </div>
-    </div>
+    </div><!-- end of .columns -->
     <hr class="m-t-0">
 
     <form action="{{route('permissions.update', $permission->id)}}" method="POST">
@@ -40,5 +40,6 @@
 
       <button class="button is-primary">Save Changes</button>
     </form>
-  </div>
+
+  </div><!-- end of .flex-cointainer -->
 @endsection

@@ -69,7 +69,6 @@
   </div> <!-- end of .flex-container -->
 @endsection
 
-
 @section('scripts')
   <script>
 

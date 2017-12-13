@@ -5,11 +5,11 @@
     <div class="columns m-t-10">
       <div class="column">
         <h1 class="title">Manage Roles</h1>
-      </div>
+      </div><!-- end of column -->
       <div class="column">
         <a href="{{route('roles.create')}}" class="button is-primary is-pulled-right"><i class="fa fa-user-plus m-r-10"></i> Create New Role</a>
-      </div>
-    </div>
+      </div> <!-- end of column -->
+    </div><!-- end of .columns -->
     <hr class="m-t-0">
 
     <div class="columns is-multiline">
@@ -37,8 +37,9 @@
               </div>
             </article>
           </div>
-        </div>
+        </div><!-- end of column -->
       @endforeach
-    </div>
-  </div>
+    </div><!-- end of .columns -->
+
+  </div><!-- end of flex-container -->
 @endsection
