@@ -12,6 +12,7 @@ window.Slug = require('slug');
 Slug.defaults.mode = 'rfc3986';
 
 import Buefy from 'buefy';
+// import jquery from 'jquery';
 
 Vue.use(Buefy)
 

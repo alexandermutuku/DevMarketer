@@ -38,6 +38,8 @@
       <h5 class="has-text-centered m-t-20"><a href="{{route('password.request')}}" class="is-muted">Forgot Your Password?</a></h5>
     </div>
   </div>
+
+
 @endsection
 
 @section('scripts')

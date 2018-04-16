@@ -1047,6 +1047,7 @@ window.Slug = __webpack_require__(36);
 Slug.defaults.mode = 'rfc3986';
 
 
+// import jquery from 'jquery';
 
 Vue.use(__WEBPACK_IMPORTED_MODULE_0_buefy___default.a);
 

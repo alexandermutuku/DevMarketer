@@ -16,7 +16,7 @@
        <span></span>
      </button>
     </div>
-    <div class="navbar-menu">
+    <div class="navbar-menu thetop">
       <div class="navbar-start">
         <a class="navbar-item is-tab is-active">Learn</a>
         <a class="navbar-item is-tab">Discuss</a>

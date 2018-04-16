@@ -27,3 +27,9 @@ route::prefix('manage')->middleware('role:superadministrator|administrator|edito
 });
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+Route::get('/about', 'AboutController@index')->name('about');
+Route::get('/service', 'ServiceController@index')->name('service');
+Route::get('/blog', 'BlogController@index')->name('blog');
+Route::get('/project', 'ProjectController@index')->name('project');
+Route::get('/contact', 'ContactController@index')->name('contact');
